@@ -1,0 +1,25 @@
+{
+	"info": {
+		"name": "SpringApiTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_postman_id": "0f1d2b6b-0000-4000-8000-111111111111"
+	},
+	"item": [
+		{
+			"name": "Hello World",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/hello",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "8080",
+					"path": ["api", "hello"]
+				}
+			}
+		}
+	]
+}
+
+
