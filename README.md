@@ -75,5 +75,16 @@ SpringApiTest/
 - Repository: `HelloRepository` is an in-memory store seeded with one record.
 - Model: `Hello` contains `id` and `message`.
 - Routes: Declared with annotations such as `@GetMapping` in controllers.
+ 
+## Tests
+- Location: `src/test/java/com/example/springapitest/SpringbootHelloWorldApplicationTests.java`
+- What it covers:
+  - Spring context loads
+  - `GET /api/hello` returns a list containing the seeded item
+  - `GET /api/hello/1` returns the seeded item
+  - `GET /api/hello/999` returns 404
 
-
+- Run tests (Windows):
+```
+.\mvnw.cmd test
+```
