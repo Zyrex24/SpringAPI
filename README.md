@@ -3,7 +3,7 @@
 A minimal Spring Boot API using Java 21. It includes simple Controller, Service, Repository, and Model layers.
 
 ## Requirements
-- Java 21 or newer (Java 23 works fine)
+- Java 21 or newer
 - No global Maven required (the project includes the Maven Wrapper)
 
 ## Getting started
@@ -70,12 +70,10 @@ SpringApiTest/
 ```
 
 ## Components overview
-- Controller: Receives HTTP requests and returns responses. `HelloController` maps `GET /api/hello` and `GET /api/hello/{id}`.
-- Service: `SpringbootHelloWorldAppService` implements basic operations and uses the repository.
-- Repository: `HelloRepository` provides an in-memory data store seeded with one record.
-- Model: `Hello` holds `id` and `message`.
-- Routes: Defined with annotations like `@GetMapping` and `@PostMapping` in controllers.
+- Controller: Handles HTTP requests. `HelloController` maps `GET /api/hello` and `GET /api/hello/{id}`.
+- Service: `SpringbootHelloWorldAppService` contains the application logic.
+- Repository: `HelloRepository` is an in-memory store seeded with one record.
+- Model: `Hello` contains `id` and `message`.
+- Routes: Declared with annotations such as `@GetMapping` in controllers.
 
-## Notes
-- Default server port is 8080. You can change it in `src/main/resources/application.properties` or via `--server.port=...` when running.
-- MySQL is not required for this example. Add Spring Data JPA and a MySQL datasource later if needed.
+
